@@ -1,10 +1,10 @@
 // Global styling for this template
-
 body {
   @include body-font;
   padding-top: 54px;
   color: $gray-600;
 }
+
 @media (min-width: 992px) {
   body {
     padding-top: 0;
@@ -49,6 +49,7 @@ p.lead {
   font-size: 1.5rem;
 }
 
+
 .social-icons {
   a {
     display: inline-block;
@@ -65,10 +66,29 @@ p.lead {
       margin-right: 0;
     }
     &:hover {
-      background-color: $primary;
+      background-color: $gray-600;
     }
   }
 }
+
+a.linkedin {
+  background-color: $linkedin;
+  &:hover {
+    background-color: $link-hov;
+  }
+}
+
+a.git {
+  background-color: $black
+}
+
+a.npm {
+  background-color: $npm;
+  &:hover {
+    background-color: $npm-hov;
+  }
+}
+
 
 .dev-icons {
   font-size: 3rem;
@@ -77,4 +97,23 @@ p.lead {
       color: $primary;
     }
   }
+}
+.extraicon{
+  padding: 0px 12px;
+  background-position: 0px 50%;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0f1325;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1;
 }

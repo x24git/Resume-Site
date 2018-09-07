@@ -1,3 +1,7 @@
+particlesJS.load('particles-js', 'vendor/particles/particles.json', function() {
+  console.log('particles.js loaded - callback');});
+
+
 (function($) {
   "use strict"; // Start of use strict
 
@@ -26,3 +30,4 @@
   });
 
 })(jQuery); // End of use strict
+
