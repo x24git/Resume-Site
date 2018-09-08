@@ -129,7 +129,7 @@ a.npm:hover {
 }
 
 li.check:hover i.fa, li.check:hover i.fas {
-  color: green;
+  color: limegreen;
 }
 
 li.azure:hover i.fab {
