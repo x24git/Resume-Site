@@ -3,11 +3,15 @@
     font-weight: 800;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
+    padding-left: 10px;
   }
   .navbar-toggler {
     &:focus {
       outline-color: lighten($primary, 20%);
     }
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: $gray-600;
   }
 }
 

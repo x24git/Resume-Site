@@ -36,6 +36,12 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+p,li{
+  color: $gray-700;
+}
+li.list-inline-item{
+  color: $gray-650;
+}
 
 p.lead {
   font-size: 1.15rem;
@@ -94,16 +100,41 @@ a.npm {
   font-size: 3rem;
   .list-inline-item i {
     &:hover {
-      color: $primary;
+      filter: opacity(60%);
     }
   }
 }
+
 .extraicon{
   padding: 0px 12px;
   background-position: 0px 50%;
   background-size: 24px 24px;
   background-repeat: no-repeat;
 }
+.extraicon-lg{
+  padding: 0px 24px;
+  background-position: 0px 50%;
+  background-size: 48px 48px;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+li.check:hover i.fa, li.check:hover i.fas{
+    color: green;
+}
+
+li.azure:hover i.fab {
+    color: deepskyblue;
+}
+
+li.aws:hover i.fab {
+    color: orange;
+}
+li.parent:hover i.noshow {
+    color: red;
+}
+
+
 
 
 #particles-js {
@@ -113,7 +144,7 @@ a.npm {
   background-color: #0f1325;
   background-image: url("");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: 50% 50%;
   z-index: -1;
 }

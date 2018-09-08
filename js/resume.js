@@ -1,10 +1,22 @@
-particlesJS.load('particles-js', 'vendor/particles/particles.json', function() {
-  console.log('particles.js loaded - callback');});
+particlesJS.load('particles-js', 'vendor/particles/particles.json', function() {});
+
+
+function expandSection() {
+  if($(window).width() < 992){
+    for (var i = 0; i < 600; i++) {
+      (function(i) {
+        setTimeout(function() {
+          window.dispatchEvent(new Event('resize'));
+        }, 5 * i);
+      })(i);
+    }
+  }
+}
 
 
 (function($) {
   "use strict"; // Start of use strict
-
+  $('[data-toggle="tooltip"]').tooltip()
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

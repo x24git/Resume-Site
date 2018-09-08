@@ -42,6 +42,14 @@ h3 {
   font-size: 2rem;
 }
 
+p, li {
+  color: #495057;
+}
+
+li.list-inline-item {
+  color: #686868;
+}
+
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
@@ -100,7 +108,8 @@ a.npm:hover {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  -webkit-filter: opacity(60%);
+  filter: opacity(60%);
 }
 
 .extraicon {
@@ -110,6 +119,31 @@ a.npm:hover {
   background-repeat: no-repeat;
 }
 
+.extraicon-lg {
+  padding: 0px 24px;
+  background-position: 0px 50%;
+  background-size: 48px 48px;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+li.check:hover i.fa, li.check:hover i.fas {
+  color: green;
+}
+
+li.azure:hover i.fab {
+  color: deepskyblue;
+}
+
+li.aws:hover i.fab {
+  color: orange;
+}
+
+li.parent:hover i.noshow {
+  color: red;
+}
+
 #particles-js {
   position: absolute;
   width: 100%;
@@ -117,7 +151,7 @@ a.npm:hover {
   background-color: #0f1325;
   background-image: url("");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: 50% 50%;
   z-index: -1;
 }
@@ -126,10 +160,15 @@ a.npm:hover {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  padding-left: 10px;
 }
 
 #sideNav .navbar-toggler:focus {
   outline-color: #da9a81;
+}
+
+#sideNav .navbar-dark .navbar-nav .nav-link {
+  color: #868e96;
 }
 
 @media (min-width: 992px) {
