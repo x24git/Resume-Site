@@ -1,4 +1,5 @@
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2ca20172-fd25-4a69-aa76-d561f2d56f10/deploy-status)](https://app.netlify.com/sites/christopher-makarem/deploys)
 
 ## Website
 
@@ -38,7 +39,3 @@ After installation, run `gulp dev` which will open up a preview of the template 
 
 You must have Gulp installed globally on your machine in order to use these features.
 
-
-## Copyright and License
-
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
