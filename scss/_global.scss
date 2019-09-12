@@ -105,15 +105,24 @@ a.npm {
   }
 }
 
+.github-icon {
+  color:#343a40;
+  padding-left: 10px;
+  padding-right: 10px;
+  &:hover {
+    filter: opacity(60%);
+  }
+}
+
 .extraicon{
-  padding: 0px 12px;
-  background-position: 0px 50%;
+  padding: 0 12px;
+  background-position: 0 50%;
   background-size: 24px 24px;
   background-repeat: no-repeat;
 }
 .extraicon-lg{
-  padding: 0px 24px;
-  background-position: 0px 50%;
+  padding: 0 24px;
+  background-position: 0 50%;
   background-size: 48px 48px;
   background-repeat: no-repeat;
   filter: grayscale(100%) opacity(80%);
@@ -179,7 +188,6 @@ li.parent:hover i.noshow {
   width: 100%;
   height: 100%;
   background-color: #0f1325;
-  background-image: url("");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 50% 50%;
