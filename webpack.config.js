@@ -32,7 +32,16 @@ module.exports = {
             ]
         },
         ),
-        new FaviconsWebpackPlugin('src/img/favicon.ico') // svg works too!
+        new FaviconsWebpackPlugin({
+            logo: './src/img/favicon.png',
+            cache: true,
+            inject: true,
+            favicons: {
+                appName: 'Resume-Christopher Makarem',
+                developerName: 'Christopher Makarem',
+            }
+
+        })
     ],
     devtool: "source-map",
     module: {
