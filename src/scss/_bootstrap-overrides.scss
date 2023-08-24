@@ -1,0 +1,17 @@
+@use "variables" as override;
+.bg-primary {
+  background-color: override.$primary !important;
+}
+
+.text-primary {
+  color: override.$primary !important;
+}
+
+a {
+  color: override.$primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken(override.$primary, 15%);
+  }
+}

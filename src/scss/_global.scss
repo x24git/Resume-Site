@@ -1,14 +1,17 @@
 // Global styling for this template
+@use "variables" as override;
+@use "mixins" as mixins;
+
 body {
-  @include body-font;
+  @include mixins.body-font;
   padding-top: 54px;
-  color: $gray-600;
+  color: override.$gray-600;
 }
 
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: $sidebar-base-width;
+    padding-left: override.$sidebar-base-width;
   }
 }
 
@@ -18,10 +21,10 @@ h3,
 h4,
 h5,
 h6 {
-  @include heading-font;
+  @include mixins.heading-font;
   font-weight: 700;
   text-transform: uppercase;
-  color: $gray-800;
+  color: override.$gray-800;
 }
 
 h1 {
@@ -37,10 +40,10 @@ h3 {
   font-size: 2rem;
 }
 p,li{
-  color: $gray-700;
+  color: override.$gray-700;
 }
 li.list-inline-item{
-  color: $gray-650;
+  color: override.$gray-650;
 }
 
 p.lead {
@@ -51,8 +54,15 @@ p.lead {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  @include heading-font;
+  @include mixins.heading-font;
   font-size: 1.5rem;
+}
+
+.subheading-date {
+  color: override.$gray-650;
+  font-weight: 400;
+  @include mixins.heading-font;
+  font-size: 1rem;
 }
 
 
@@ -61,8 +71,8 @@ p.lead {
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: $gray-700;
-    color: $white !important;
+    background-color: override.$gray-700;
+    color: override.$white !important;
     border-radius: 100%;
     text-align: center;
     font-size: 1.5rem;
@@ -72,26 +82,26 @@ p.lead {
       margin-right: 0;
     }
     &:hover {
-      background-color: $gray-600;
+      background-color: override.$gray-600;
     }
   }
 }
 
 a.linkedin {
-  background-color: $linkedin;
+  background-color: override.$linkedin;
   &:hover {
-    background-color: $link-hov;
+    background-color: override.$link-hov;
   }
 }
 
 a.git {
-  background-color: $black
+  background-color: override.$black
 }
 
 a.npm {
-  background-color: $npm;
+  background-color: override.$npm;
   &:hover {
-    background-color: $npm-hov;
+    background-color: override.$npm-hov;
   }
 }
 

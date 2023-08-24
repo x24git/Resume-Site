@@ -5,7 +5,8 @@ section.resume-section {
   .resume-item {
     .resume-content {}
     .resume-date {
-      min-width: none;
+      flex: 1 1 auto !important;
+      min-width: unset;
     }
   }
 }

@@ -21,25 +21,19 @@
 
     <title>Christopher Makarem</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom fonts -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-    <!-- Custom styles -->
-    <link href="css/resume.min.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" >
     <div id="particles-js"></div>
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">&nbsp;Christopher Makarem</span>
-        <link href="favicon.ico" rel="icon"/>
+        <link href="../favicon.ico" rel="icon"/>
         <span class="d-none d-lg-block">
           <img alt=""
                class="img-fluid img-profile rounded-circle mx-auto mb-2"
@@ -48,38 +42,38 @@
     </a>
     <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
             class="navbar-toggler"
-            data-target="#navbarSupportedContent" data-toggle="collapse" onclick="expandSection()"
+            data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"
             type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav" onclick="expandSection()">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
+        <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about" onclick="expandSection()">About</a>
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#experience" onclick="expandSection()">Experience</a>
+                <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#projects" onclick="expandSection()">Projects</a>
+                <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#education" onclick="expandSection()">Education</a>
+                <a class="nav-link js-scroll-trigger" href="#education">Education</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#skills" onclick="expandSection()">Skills</a>
+                <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#interests" onclick="expandSection()">Interests</a>
+                <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#awards" onclick="expandSection()">Resume</a>
+                <a class="nav-link js-scroll-trigger" href="#awards">Resume</a>
             </li>
         </ul>
     </div>
 </nav>
 
-<div class="container-fluid p-0">
+<div class="container-fluid p-0" data-bs-spy="scroll" data-bs-target="#sideNav">
 
     <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
@@ -96,6 +90,7 @@
                 quality is not an act, but a habit. As the saying goes: "Quality means doing it right when no one is
                 looking." </p>
             <script src="https://www.hackthebox.eu/badge/175082"></script>
+
             <div class="subheading mb-4"></div>
             <div class="social-icons">
                 <a class="linkedin" href="https://www.linkedin.com/in/christopher-makarem/">
@@ -123,7 +118,7 @@
         <div class="my-auto">
             <h2 class="mb-5">Experience</h2>
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0">Security Software Engineer</h3>
                     <div class="subheading mb-3">Microsoft &#8226; Azure Data</div>
                     <p> I am a member of Azure Data Red Team responsible for penetration testing and <a
@@ -134,12 +129,12 @@
                         fuzzing tool <a href="https://github.com/microsoft/restler-fuzzer"><b>RESTler</b></a>.
                     </p>
                 </div>
-                <div class="resume-date text-md-right">
+                <div class="resume-date text-md-end">
                     <span class="text-primary">October 2021 - Present</span>
                 </div>
             </div>
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0">Cyber Software Team Lead</h3>
                     <div class="subheading mb-3">Raytheon Technologies &#8226; Information and Space</div>
                     <p> I am the team leader for cyber software development on a large scale space-based program. My
@@ -161,12 +156,13 @@
                         their overall productivity rate and without increasing technical debt.
                     </p>
                 </div>
-                <div class="resume-date text-md-right">
-                    <span class="text-primary">January 2020 - October 2021</span>
+                <div class="resume-date text-md-end">
+                    <span class="text-primary">January 2020 - February 2023</span>
+                    <p class="subheading-date"> ** From October 2021 - February 2023 worked as a part-time advisor and subject matter expert for the program. </p>
                 </div>
             </div>
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0">Software Engineer</h3>
                     <div class="subheading mb-3">Raytheon &#8226; Space and Airborne Systems</div>
                     <p> I am a member of a small team of subject matter experts that provide software assurance and
@@ -188,13 +184,13 @@
                         was enforced for all data states (at rest, in transit, and in use).
                     </p>
                 </div>
-                <div class="resume-date text-md-right">
+                <div class="resume-date text-md-end">
                     <span class="text-primary">April 2019 - April 2020</span>
                 </div>
             </div>
 
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0">Security Analyst</h3>
                     <div class="subheading mb-3">The DigiTrust Group</div>
                     <p> Performed real-time analysis of multiple clients' networks to determine risk and vulnerability.
@@ -210,19 +206,19 @@
                         </a>
                         . To help automate that process, I created custom detection
                         logic that was driven from
-                        <a href="https://www.tenable.com/blog/mr-robot-asks-are-you-hacker-proof">
+                        <a href="https://www.tenable.com/blog/me-robot-asks-are-you-hacker-proof">
                             <b>vulnerability assessments</b>
                         </a>
                         of a client's environment. The result of this automation was a 60%
                         increase in individual productivity and a sizable decrease in false negative click through.</p>
                 </div>
-                <div class="resume-date text-md-right">
+                <div class="resume-date text-md-end">
                     <span class="text-primary">October 2017 - April 2019</span>
                 </div>
             </div>
 
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0">Help Desk Technician</h3>
                     <div class="subheading mb-3">Broad Foundation &#8226; Family Office Financial Services</div>
                     <p>In charge of Azure Online migration/hybridization. As part of this migration, I rolled out a
@@ -235,13 +231,13 @@
                         with Wireshark and Fiddler as well as writing a Powershell GUI interface to automate user
                         creation and onboarding.</p>
                 </div>
-                <div class="resume-date text-md-right">
+                <div class="resume-date text-md-end">
                     <span class="text-primary">October 2016 - September 2017</span>
                 </div>
             </div>
 
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0">Systems Administration Intern</h3>
                     <div class="subheading mb-3">American Computers and Engineers</div>
                     <p>Over the course of two summers with this organization, I was able to deploy a Windows Active
@@ -255,13 +251,13 @@
                         SMB signing, <a href="https://technet.microsoft.com/en-us/mt227395.aspx"><b>LAPS</b></a>, and
                         NTLM restrictions.</p>
                 </div>
-                <div class="resume-date text-md-right">
+                <div class="resume-date text-md-end">
                     <span class="text-primary">June 2015 - September 2015<br>June 2014 - September 2014</span>
                 </div>
             </div>
 
             <div class="resume-item d-flex flex-column flex-md-row">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0">Undergraduate Lab Researcher</h3>
                     <div class="subheading mb-3">UCLA Spintronics Laboratory</div>
                     <p>Worked collaboratively with a team of undergraduates to deliver proof-of-concept <a
@@ -273,7 +269,7 @@
                         MRAM <a href="https://en.wikipedia.org/wiki/Etching_(microfabrication)"><b>silicon
                             etching</b></a>, and electromagnetic modeling.</p>
                 </div>
-                <div class="resume-date text-md-right">
+                <div class="resume-date text-md-end">
                     <span class="text-primary">September 2014 - December 2014</span>
                 </div>
             </div>
@@ -289,7 +285,7 @@
             <h2 class="mb-5">Projects</h2>
 
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0">
                         <a href="https://iocscan.io" style="color:#343a40">IOCSCAN.IO
                             <i class="fas fa-external-link-alt fa-xs" style="font-size:1rem"></i>
@@ -342,7 +338,7 @@
             </div>
 
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0"><a href="https://github.com/x24git/BCM-2835-UART-Linux-Driver"
                                         style="color:#343a40">Linux
                         UART Driver
@@ -385,7 +381,7 @@
             </div>
 
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0"><a href="https://www.youtube.com/watch?v=O4Utlzs6NiQ" style="color:#343a40">Traffic
                         Control Model <i class="fas fa-external-link-alt fa-xs" style="font-size:1rem"></i></a>
                         <a href="https://github.com/x24git/Traffic-Controller-Model">
@@ -421,7 +417,7 @@
                 </div>
             </div>
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0"><a href="https://www.youtube.com/watch?v=qRO2x7tB3jM" style="color:#343a40">Music
                         LED
                         Visualizer <i class="fas fa-external-link-alt fa-xs" style="font-size:1rem"></i></a>
@@ -478,7 +474,7 @@
         <div class="my-auto">
             <h2 class="mb-5">Education and Certification</h2>
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0"><i class="extraicon-lg cissp"></i>&nbsp;&nbsp; Certified Information Systems
                         Security Professional (CISSP)
                     </h3>
@@ -487,23 +483,23 @@
                     </div>
                     <div>Credential ID 878997</div>
                 </div>
-                <div class="resume-date text-md-right">
+                <div class="resume-date text-md-end">
                     <span class="text-primary">April 2021</span>
                 </div>
             </div>
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0"><i class="extraicon-lg ceh"></i>&nbsp;&nbsp; Certified Ethical Hacker (CEH)
                     </h3>
                     <div class="subheading my-2">EC-Council</div>
                     <div>Credential ID ECC9430718265</div>
                 </div>
-                <div class="resume-date text-md-right">
+                <div class="resume-date text-md-end">
                     <span class="text-primary">June 2020</span>
                 </div>
             </div>
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                <div class="resume-content mr-auto">
+                <div class="resume-content me-auto">
                     <h3 class="mb-0"><i class="fas fa-university"></i>&nbsp;&nbsp; Bachelor of Science, Electrical
                         Engineering
                     </h3>
@@ -511,7 +507,7 @@
                     <div>Electrical Engineering - Digital Signal Processing</div>
 
                 </div>
-                <div class="resume-date text-md-right">
+                <div class="resume-date text-md-end">
                     <span class="text-primary">March 2019</span>
                 </div>
             </div>
@@ -565,7 +561,7 @@
             </ul>
 
             <div class="subheading mb-0">Software/Firmware Assurance through Risk Managment</div>
-            <ul class="fa-ul mb-3 ml-3">
+            <ul class="fa-ul mb-3 ms-3">
                 <li class='parent'>
                     <i class="fas fa-book noshow"></i><b> Frameworks: </b>
                     <ul class="fa-ul pl-3 mb-0">
@@ -615,7 +611,7 @@
             </ul>
 
             <div class="subheading mb-0">Security Solutions &amp; Tools</div>
-            <ul class="fa-ul mb-3 ml-3">
+            <ul class="fa-ul mb-3 ms-3">
                 <li class="parent">
                     <i class="fas fa-user-shield noshow"></i><b> Security Assessment Families: </b>
                     <ul class="fa-ul pl-3 mb-0">
@@ -644,7 +640,7 @@
             </ul>
 
             <div class="subheading mb-0">Technical Environments</div>
-            <ul class="fa-ul mb-3 ml-3">
+            <ul class="fa-ul mb-3 ms-3">
                 <li class="azure">
                     <i class="fab fa-windows"></i><b> Microsoft Active Directory / Azure AD</b>
                     <ul class="fa-ul pl-3 mb-0">
@@ -711,28 +707,17 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
             <h2 class="mb-5">Resume</h2>
-            <a class="btn btn-lg btn-info mr-3 my-2" data-placement="bottom" data-toggle="tooltip"
-               href="ChristopherMakarem.pdf"
+            <a class="btn btn-lg btn-info me-5 my-2" data-bs-placement="bottom" data-bs-toggle="tooltip"
+               href="https://iocscan.sharepoint.com/:b:/s/iocscan.io/EZNeQY3tKm1IhdqAh7aeI8UBOC00BuY-daJzmLwz6zz28g?e=gY0itg"
                target="_blank" title="Hire Me :) "><span class="fas fa-download"></span> Resume (PDF)</a>
-            <a class="btn btn-lg btn-info my-2" data-placement="bottom" data-toggle="tooltip"
-               href="ChristopherMakarem.docx"
+            <a class="btn btn-lg btn-info my-2" data-bs-placement="bottom" data-bs-toggle="tooltip"
+               href="https://iocscan.sharepoint.com/:w:/s/iocscan.io/EZeLKkvyYTZJkFjMFyIpU_wBTu57x3WK1IEqiYOjSivJ9g?e=4xS8Pg"
                target="_blank" title="Hire Me :) "><span class="fas fa-download"></span> Resume (Word)</a>
 
         </div>
     </section>
 
 </div>
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="vendor/particles/particles.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script defer="defer" src="js/resume.min.js"></script>
 
 </body>
 

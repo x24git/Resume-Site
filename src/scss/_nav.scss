@@ -1,3 +1,5 @@
+@use 'variables' as override;
+
 #sideNav {
   .navbar-nav .nav-item .nav-link {
     font-weight: 800;
@@ -7,11 +9,11 @@
   }
   .navbar-toggler {
     &:focus {
-      outline-color: lighten($primary, 20%);
+      outline-color: lighten(override.$primary, 20%);
     }
   }
   .navbar-dark .navbar-nav .nav-link {
-    color: $gray-600;
+    color: override.$gray-600;
   }
 }
 
@@ -25,7 +27,7 @@
     display: flex;
     flex-direction: column;
 
-    width: $sidebar-base-width;
+    width: override.$sidebar-base-width;
     height: 100vh;
     .navbar-brand {
       display: flex;
@@ -35,7 +37,7 @@
       .img-profile {
         max-width: 10rem;
         max-height: 10rem;
-        border: 0.5rem solid fade-out($white, 0.8);
+        border: 0.5rem solid fade-out(override.$white, 0.8);
       }
     }
     .navbar-collapse {
