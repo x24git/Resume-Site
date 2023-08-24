@@ -28,6 +28,11 @@ function resizeEvent() {
         },  i)
     }
 }
+const navbarToggler = document.querySelector('.navbar-toggler')
+navbarToggler.addEventListener('click', function () {
+    navbar_bs.toggle();
+})
+
 
 navbar.addEventListener('hide.bs.collapse', function () {
     resizeEvent();
@@ -39,6 +44,12 @@ navbar.addEventListener('show.bs.collapse', function () {
     isNavbarShown = true;
 
 })
+const profilePic = document.querySelector('.img-profile')
+if (process.env.PROFILE !== undefined && process.env.PROFILE !== null) {
+    profilePic.src = process.env.PROFILE
+}else {
+    profilePic.style.display = 'none';
+}
 
 //initialize navbar as hidden
 let isNavbarShown = false;

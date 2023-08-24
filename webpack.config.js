@@ -2,6 +2,7 @@ BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const webpack = require("webpack");
 
 module.exports = {
 
@@ -32,6 +33,9 @@ module.exports = {
             ]
         },
         ),
+        new webpack.DefinePlugin({
+            'process.env.PROFILE': JSON.stringify(process.env.PROFILE)
+        }),
         new FaviconsWebpackPlugin({
             logo: './src/img/favicon.png',
             cache: true,
