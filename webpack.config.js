@@ -1,6 +1,7 @@
 BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = {
 
@@ -10,7 +11,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            inject: true,
+            scriptLoading: 'blocking',
             chunks: ['index'],
             filename: 'index.html'
         }),
@@ -29,8 +30,9 @@ module.exports = {
             patterns: [
                 {from: 'src/particles.json', to: 'particles/particles.json'},
             ]
-        }
-        )
+        },
+        ),
+        new FaviconsWebpackPlugin('src/img/favicon.ico') // svg works too!
     ],
     devtool: "source-map",
     module: {

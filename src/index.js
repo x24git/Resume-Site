@@ -1,5 +1,5 @@
-import("./scss/resume.scss");
-import("particles.js")
+require("./scss/resume.scss");
+require("particles.js")
 import("jquery.easing")
 import * as bootstrap from 'bootstrap'
 
@@ -14,7 +14,6 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 const scrollTriggerList = document.querySelectorAll('.js-scroll-trigger')
 const navbar = document.querySelector('#navbarSupportedContent')
 const navbar_bs =  bootstrap.Collapse.getOrCreateInstance(navbar,{toggle: false})
-console.log(navbar)
 scrollTriggerList.forEach(function (scrollTriggerEl) {
     scrollTriggerEl.addEventListener('click', function () {
         //check if element is currently shown

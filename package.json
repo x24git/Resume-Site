@@ -1,7 +1,7 @@
 {
     "title": "Resume",
     "name": "x24-resume",
-    "version": "2.0.1",
+    "version": "2.1.1",
     "description": "Resume template using Bootstrap",
     "homepage": "https://christopher-makarem.me",
     "license": "MIT",
@@ -13,7 +13,6 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "^6.4.2",
         "bootstrap": "^5.3.1",
-        "copy-webpack-plugin": "^11.0.0",
         "jquery": "^3.7.0",
         "jquery.easing": "^1.4.1",
         "particles.js": "^2.0.0"
@@ -25,6 +24,9 @@
         "sass": "^1.66.1",
         "sass-loader": "^13.3.2",
         "style-loader": "^3.3.3",
+        "copy-webpack-plugin": "^11.0.0",
+        "favicons": "^7.1.4",
+        "favicons-webpack-plugin": "^6.0.1",
         "webpack": "^5.88.2",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^4.15.1"
