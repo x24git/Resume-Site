@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
@@ -17,17 +17,16 @@
 </head>
 
 <body id="page-top">
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" >
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <div id="particles-js"></div>
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">&nbsp;Christopher Makarem</span>
         <span class="d-none d-lg-block profile-wrapper">
-          <img alt="" src="" class="img-fluid img-profile rounded-circle mx-auto mb-2">
+          <img alt="" class="img-fluid img-profile rounded-circle mx-auto mb-2" src="">
         </span>
     </a>
     <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-            class="navbar-toggler"
-            type="button">
+            class="navbar-toggler mx-4" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
@@ -54,6 +53,16 @@
                 <a class="nav-link js-scroll-trigger" href="#awards">Resume</a>
             </li>
         </ul>
+    </div>
+    <div class="d-none d-lg-block">
+        <div class="d-flex">
+            <i class="fa fa-lg fa-sun mode-switch" id="sunIcon">&nbsp;</i>
+            <div class="form-check form-switch form-switch-md">
+                <label for="darkMode"></label>
+                <input class="form-check-input" type="checkbox" role="switch" id="darkMode">
+            </div>
+            <i class="fa fa-lg fa-cloud-moon mode-switch" id="moonIcon">&nbsp;</i>
+        </div>
     </div>
 </nav>
 
@@ -142,7 +151,8 @@
                 </div>
                 <div class="resume-date text-md-end">
                     <span class="text-primary">January 2020 - February 2023</span>
-                    <p class="subheading-date"> ** From October 2021 - February 2023 worked as a part-time advisor and subject matter expert for the program. </p>
+                    <p class="subheading-date"> ** From October 2021 - February 2023 worked as a part-time advisor and
+                        subject matter expert for the program. </p>
                 </div>
             </div>
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
@@ -271,39 +281,42 @@
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
                 <div class="resume-content me-auto">
                     <h3 class="mb-0">
-                        <a href="https://iocscan.io" style="color:#343a40">IOCSCAN.IO
+                        <a href="https://iocscan.io" class="project-link"> IOCSCAN.IO
                             <i class="fas fa-external-link-alt fa-xs" style="font-size:1rem"></i>
                         </a>
-                        <a href="https://github.com/x24git/iocscan">
-                            <i class="fab fa-github fa-sm github-icon"
-                               data-placement="bottom" data-toggle="tooltip" title="GitHub Link"></i>
+                        <a href="https://github.com/x24git/iocscan" data-bs-placement="bottom" data-bs-toggle="tooltip"
+                           data-bs-title="GitHub Link">
+                            <i class="fab fa-github fa-sm github-icon"></i>
                         </a>
                     </h3>
                     <div class="subheading mb-3">
                         <li class="list-inline-item">
-                            <i class="fab fa-html5" data-placement="bottom" data-toggle="tooltip" style="color:red"
+                            <i class="fab fa-html5" data-bs-placement="bottom" data-bs-toggle="tooltip"
+                               style="color:red"
                                title="HTML5"></i>
                         </li>
                         <li class="list-inline-item">
-                            <i class="fab fa-css3-alt" data-placement="bottom" data-toggle="tooltip"
+                            <i class="fab fa-css3-alt" data-bs-placement="bottom" data-bs-toggle="tooltip"
                                style="color:dodgerblue"
                                title="CSS"></i>
                         </li>
                         <li class="list-inline-item">
-                            <i class="fab fa-js-square" data-placement="bottom" data-toggle="tooltip" style="color:gold"
+                            <i class="fab fa-js-square" data-bs-placement="bottom" data-bs-toggle="tooltip"
+                               style="color:gold"
                                title="Javascript"></i>
                         </li>
                         <li class="list-inline-item">
-                            <i class="fab fa-angular" data-placement="bottom" data-toggle="tooltip" style="color:red"
+                            <i class="fab fa-angular" data-bs-placement="bottom" data-bs-toggle="tooltip"
+                               style="color:red"
                                title="Angular"></i>
                         </li>
                         <li class="list-inline-item">
-                            <i class="fab fa-node-js" data-placement="bottom" data-toggle="tooltip"
+                            <i class="fab fa-node-js" data-bs-placement="bottom" data-bs-toggle="tooltip"
                                style="color:olivedrab"
                                title="NodeJS"></i>
                         </li>
                         <li class="list-inline-item">
-                            <i class="fab fa-npm" data-placement="bottom" data-toggle="tooltip"
+                            <i class="fab fa-npm" data-bs-placement="bottom" data-bs-toggle="tooltip"
                                style="color:red" title="Node Package Manager"></i>
                         </li>
                     </div>
@@ -324,26 +337,26 @@
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
                 <div class="resume-content me-auto">
                     <h3 class="mb-0"><a href="https://github.com/x24git/BCM-2835-UART-Linux-Driver"
-                                        style="color:#343a40">Linux
+                                        class="project-link">Linux
                         UART Driver
                         <i class="fas fa-external-link-alt fa-xs" style="font-size:1rem"></i></a>
-                        <a href="https://github.com/x24git/BCM-2835-UART-Linux-Driver">
-                            <i class="fab fa-github fa-sm github-icon"
-                               data-placement="bottom" data-toggle="tooltip" title="GitHub Link"></i>
+                        <a href="https://github.com/x24git/BCM-2835-UART-Linux-Driver" data-bs-placement="bottom"
+                           data-bs-toggle="tooltip" data-bs-title="GitHub Link">
+                            <i class="fab fa-github fa-sm github-icon"></i>
                         </a></h3>
                     <div class="subheading mb-3">
                         <li class="list-inline-item">
-                            <i class="fab fa-linux" data-placement="bottom" data-toggle="tooltip"
+                            <i class="fab fa-linux" data-bs-placement="bottom" data-bs-toggle="tooltip"
                                title="Linux Kernel"></i>
                         </li>
                         <li class="list-inline-item">
                             <i class="extraicon c"
-                               data-placement="bottom" data-toggle="tooltip" title="C"></i>
+                               data-bs-placement="bottom" data-bs-toggle="tooltip" title="C"></i>
                         </li>
                         <li class="list-inline-item">
                             <i class="extraicon"
-                               data-placement="bottom"
-                               data-toggle="tooltip"
+                               data-bs-placement="bottom"
+                               data-bs-toggle="tooltip"
                                style="background-image: url('https://upload.wikimedia.org/wikipedia/en/c/cb/Raspberry_Pi_Logo.svg');"
                                title="Raspberry Pi"></i>
                         </li>
@@ -366,11 +379,11 @@
 
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
                 <div class="resume-content me-auto">
-                    <h3 class="mb-0"><a href="https://www.youtube.com/watch?v=O4Utlzs6NiQ" style="color:#343a40">Traffic
+                    <h3 class="mb-0"><a href="https://www.youtube.com/watch?v=O4Utlzs6NiQ" class="project-link">Traffic
                         Control Model <i class="fas fa-external-link-alt fa-xs" style="font-size:1rem"></i></a>
-                        <a href="https://github.com/x24git/Traffic-Controller-Model">
-                            <i class="fab fa-github fa-sm github-icon"
-                               data-placement="bottom" data-toggle="tooltip" title="GitHub Link"></i>
+                        <a href="https://github.com/x24git/Traffic-Controller-Model" data-bs-placement="bottom"
+                           data-bs-toggle="tooltip" data-bs-title="GitHub Link">
+                            <i class="fab fa-github fa-sm github-icon"></i>
                         </a>
                     </h3>
                     <div class="subheading mb-3">
@@ -379,13 +392,14 @@
                         </li>
                         <li class="list-inline-item">
                             <i class="extraicon"
-                               data-placement="bottom"
-                               data-toggle="tooltip"
+                               data-bs-placement="bottom"
+                               data-bs-toggle="tooltip"
                                style="background-image: url('https://upload.wikimedia.org/wikipedia/en/c/cb/Raspberry_Pi_Logo.svg');"
                                title="Raspberry Pi"></i>
                         </li>
                         <li class="list-inline-item">
-                            <i class="fab fa-youtube" data-placement="bottom" data-toggle="tooltip" style="color:red"
+                            <i class="fab fa-youtube" data-bs-placement="bottom" data-bs-toggle="tooltip"
+                               style="color:red"
                                title="Youtube"></i>
                         </li>
                     </div>
@@ -402,12 +416,12 @@
             </div>
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
                 <div class="resume-content me-auto">
-                    <h3 class="mb-0"><a href="https://www.youtube.com/watch?v=qRO2x7tB3jM" style="color:#343a40">Music
+                    <h3 class="mb-0"><a href="https://www.youtube.com/watch?v=qRO2x7tB3jM" class="project-link">Music
                         LED
                         Visualizer <i class="fas fa-external-link-alt fa-xs" style="font-size:1rem"></i></a>
-                        <a href="https://github.com/x24git/LED-Visualizer">
-                            <i class="fab fa-github fa-sm github-icon"
-                               data-placement="bottom" data-toggle="tooltip" title="GitHub Link"></i>
+                        <a href="https://github.com/x24git/LED-Visualizer" data-bs-placement="bottom"
+                           data-bs-toggle="tooltip" data-bs-title="GitHub Link">
+                            <i class="fab fa-github fa-sm github-icon"></i>
                         </a>
                     </h3>
                     <div class="subheading mb-3">
@@ -415,20 +429,20 @@
                             <i class="fas fa-volume-up"></i>
                         </li>
                         <li class="list-inline-item">
-                            <i class="fab fa-java" data-placement="bottom" data-toggle="tooltip" style="color:red"
+                            <i class="fab fa-java" data-bs-placement="bottom" data-bs-toggle="tooltip" style="color:red"
                                title="Java"></i>
                         </li>
                         <li class="list-inline-item">
                             <i class="extraicon"
-                               data-placement="bottom"
-                               data-toggle="tooltip"
+                               data-bs-placement="bottom"
+                               data-bs-toggle="tooltip"
                                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2e/Processing_3_logo.png')"
                                title="Processing"></i>
                         </li>
                         <li class="list-inline-item">
                             <i class="extraicon"
-                               data-placement="bottom"
-                               data-toggle="tooltip"
+                               data-bs-placement="bottom"
+                               data-bs-toggle="tooltip"
                                style="background-image: url('https://make.lk/wp-content/uploads/2018/02/1_grcYwW_zgkpzP0VEsh3vOg.png');"
                                title="Arduino"></i>
                         </li>
@@ -508,39 +522,43 @@
             <div class="subheading mb-3">Programming Languages &amp; Frameworks</div>
             <ul class="list-inline dev-icons">
                 <li class="list-inline-item">
-                    <i class="extraicon-lg cplusplus" data-placement="bottom" data-toggle="tooltip" title="C++"></i>
+                    <i class="extraicon-lg cplusplus" data-bs-placement="bottom" data-bs-toggle="tooltip"
+                       title="C++"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="extraicon-lg c" data-placement="bottom" data-toggle="tooltip" title="C"></i>
+                    <i class="extraicon-lg c" data-bs-placement="bottom" data-bs-toggle="tooltip" title="C"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="extraicon-lg python" data-placement="bottom" data-toggle="tooltip" title="Python"></i>
+                    <i class="extraicon-lg python" data-bs-placement="bottom" data-bs-toggle="tooltip"
+                       title="Python"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="extraicon-lg java" data-placement="bottom" data-toggle="tooltip" title="Java"></i>
+                    <i class="extraicon-lg java" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Java"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="extraicon-lg powershell" data-placement="bottom" data-toggle="tooltip"
+                    <i class="extraicon-lg powershell" data-bs-placement="bottom" data-bs-toggle="tooltip"
                        title="Powershell"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="extraicon-lg html" data-placement="bottom" data-toggle="tooltip" title="HTML5"></i>
+                    <i class="extraicon-lg html" data-bs-placement="bottom" data-bs-toggle="tooltip" title="HTML5"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="extraicon-lg css" data-placement="bottom" data-toggle="tooltip" title="CSS3"></i>
+                    <i class="extraicon-lg css" data-bs-placement="bottom" data-bs-toggle="tooltip" title="CSS3"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="extraicon-lg javascript" data-placement="bottom" data-toggle="tooltip"
+                    <i class="extraicon-lg javascript" data-bs-placement="bottom" data-bs-toggle="tooltip"
                        title="Javascript"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="extraicon-lg angular" data-placement="bottom" data-toggle="tooltip" title="Angular"></i>
+                    <i class="extraicon-lg angular" data-bs-placement="bottom" data-bs-toggle="tooltip"
+                       title="Angular"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="extraicon-lg nodejs" data-placement="bottom" data-toggle="tooltip" title="NodeJS"></i>
+                    <i class="extraicon-lg nodejs" data-bs-placement="bottom" data-bs-toggle="tooltip"
+                       title="NodeJS"></i>
                 </li>
                 <li class="list-inline-item">
-                    <i class="extraicon-lg mysql" data-placement="bottom" data-toggle="tooltip" title="MySQL"></i>
+                    <i class="extraicon-lg mysql" data-bs-placement="bottom" data-bs-toggle="tooltip" title="MySQL"></i>
                 </li>
             </ul>
 
@@ -700,8 +718,16 @@
 
         </div>
     </section>
-
 </div>
+<button type="button" class="btn btn-danger btn-floating btn-lg btn-dark-mode" id="dark-button">
+    <i class="fa fa-lg fa-moon"></i>
+</button>
+<button type="button" class="btn btn-danger btn-floating btn-lg btn-dark-mode" id="light-button">
+    <i class="fa fa-lg fa-sun"></i>
+</button>
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="top-button">
+    <i class="fas fa-arrow-up"></i>
+</button>
 
 </body>
 

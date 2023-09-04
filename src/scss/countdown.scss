@@ -1,12 +1,13 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,700|Open+Sans");
+
 html {
   overflow-x: hidden;
 }
 
 body {
   background-image: url("src/img/hipp+rhino.jpg");
-  background-color: rgb(182,134,88);
+  background-color: rgb(182, 134, 88);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: center top;
@@ -1298,13 +1299,13 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #E91E63;
 }
 
-$green : #409950;
-$white : #fff;
-$font : 'Roboto', helvetica, sans-serif;
-$height : 50px;
+$green: #409950;
+$white: #fff;
+$font: 'Roboto', helvetica, sans-serif;
+$height: 50px;
 
 p {
-  &form{
+  &form {
     margin: 0px;
     font-weight: 500;
     text-align: center;
@@ -1316,10 +1317,12 @@ p {
     position: relative;
     z-index: 99;
   }
+
   &#incomplete-label {
     cursor: pointer;
   }
 }
+
 form {
   background-color: white;
   height: $height;
@@ -1333,7 +1336,7 @@ form {
   cursor: pointer;
   width: 300px;
   transition: width .3s ease-in-out;
-  box-shadow: 1px 1px 3px 2px rgba(50,50,50,.3);
+  box-shadow: 1px 1px 3px 2px rgba(50, 50, 50, .3);
 
   &.closed {
     width: 150px;
@@ -1451,7 +1454,6 @@ form {
   }
 
 }
-
 
 
 p.subtitle {

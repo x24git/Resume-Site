@@ -2,17 +2,22 @@ section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
   max-width: 75rem;
+
   .resume-item {
-    .resume-content {}
+    .resume-content {
+    }
+
     .resume-date {
       flex: 1 1 auto !important;
       min-width: unset;
     }
   }
 }
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
+
     .resume-item {
       .resume-date {
         min-width: 18rem;
@@ -20,13 +25,10 @@ section.resume-section {
     }
   }
 }
+
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
-}
-
-.container-fluid {
-  background-image: url(../img/bg.png);
 }
